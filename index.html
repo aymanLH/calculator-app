@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;400i&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="calculatrice.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form>
+            <h1>Calculatrice</h1>
+            <div class="input-container">
+                <input type="number" placeholder="1er Nombre" id="num1">
+                <input type="number" placeholder="2éme Nombre" id="num2">
+            </div>
+            <select id="operation">
+                <option value="" disabled selected>Choisissez une opération</option>
+                <option value="Add">Addition</option>
+                <option value="subtract">Soustraction</option>
+                <option value="multiply">Multiplication</option>
+                <option value="divide">Division</option>
+            </select>
+            <div class="result-group">
+                <input type="text" id="result" placeholder="  Résultat" readonly>
+                <button type="submit" id="btn">Calculer</button>
+            </div>
+        </form>
+    </div>
+    <script src="calculatrice.js"></script>
+</body>
+
+</html>
